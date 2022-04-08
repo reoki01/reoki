@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reoki's</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .firstLand {
+            background-image: url('img/header.jpeg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+        }
+        .firstlanddiv{
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(90deg, rgb(242, 0, 250) 0%, rgba(216, 231, 0, 0.784) 80%);
+        }
+        nav{
+            height: 70px;
+            color: white;
+        }
+        nav ul{
+            position: absolute;
+            left: 5vw;
+        }
+        nav ul li{
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-weight: 400;
+        }
+        .headflex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        nav a{
+            color: white;
+        }
+        .headflex .headimg{
+            height: fit-content;
+            width: fit-content;
+        }
+        .imghead{
+            height: 80vh;
+        }
+        .headinfo h1{
+            font-size: 120px;
+        }
+        .headinfo h2{
+            font-size: 70px;
+        }
+        .headinfo h2 b{
+            font-size: 100px;
+        }
+        .headinfo h3{
+            font-size: 70px;
+        }
+        .section2 , .section3 , .section3 .div1{
+            height: 100vh;
+            width: 100%;
+        }
+        .section2 iframe{
+            height: 100vh;
+            width: 100vw;
+        }
+        .section3{
+            background-image: url(img/allanime5.jpg);
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .section3 .div1{
+            background: linear-gradient(90deg, rgba(253, 3, 240, 0.87) 35%, rgba(0,212,255,0) 100%);
+            text-align: left;
+            color: white;
+        }
+        .section3 .div1 h1 , .section3 .div1 h2{
+            padding-left: 5vw;
+        }
+        .section3 .div1 h1{
+            font-size: 120px;
+            padding-top: 40vh;
+        }
+        .section3 .div h2{
+            font-size: 50px;
+        }
+        #promo{
+            height: 100vh;
+            width: 100vw;
+            background-image: url(img/anime.webp);
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #promo .promocontent{
+            background: linear-gradient(90deg, rgba(255, 21, 243, 0) 0%, rgba(230, 207, 0, 0.88) 80%);
+            text-align: right;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .promocontent img{
+            border: 2px solid white;
+            height: 85vh;
+            width: auto;
+            transform: rotateZ(-5deg);
+        }
+        .promocontent h1{
+            font-size: 120px;
+            margin-left: -70px;
+            z-index: 1000;
+        }
+        .promocontent h2{
+            font-size: 40px;
+            margin-left: -70px;
+            z-index: 1000;
+        }
+        .cont{
+            z-index: 1000;
+        }
+        .foot1{
+            margin: 20px;
+            text-align: center;
+            font-size: large;
+            font-weight: 500;
+        }
+        .foot1 .qt{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .copyright p{
+            text-align: center;
+            font-size: 10px;
+            width: 100%;
+        }
+        /* for screen size below 500px */
+    @media all and (max-width:500px) {
+        .headflex{
+            flex-direction: column-reverse;
+        }
+        .headimg , .imghead{
+            height: 45vh;
+        }
+        .headinfo h1{
+            font-size: 70px;
+        }
+        .headinfo h2{
+            font-size: 40px;
+        }
+        .headinfo h2 b{
+            font-size: 70px;
+        }
+        .headinfo h3{
+            font-size: 37px;
+        }
+        .section3 .div1 h1{
+            font-size: 70px;
+            padding-top: 40vh;
+        }
+        .section3 .div h2{
+            font-size: 30px;
+        }
+        #promo .promocontent{
+            background: linear-gradient(90deg, rgba(255, 21, 243, 0) 0%, rgba(230, 207, 0, 0.88) 80%);
+            text-align: right;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .promocontent img{
+            border: 2px solid white;
+            height: 30vh;
+            width: auto;
+            transform: rotateZ(-5deg);
+        }
+        .promocontent h1{
+            font-size: 50px;
+            margin-left: -50px;
+            z-index: 1000;
+        }
+        .promocontent h2{
+            font-size: 20px;
+            margin-left: 0px;
+            z-index: 1000;
+        }
+    }
+    </style>
+    <header class="firstLand">
+        <div class="firstlanddiv">
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#promo">Promotion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headflex">
+            <div class="headinfo">
+                <h1>instagram</h1>
+                <h2><b>16K+</b> followers</h2>
+                <h3>@r.eoki</h3>
+            </div>
+            <div class="headimg">
+                <div><img  class="imghead" src="img/instagram3d1.png" alt="instagram"></div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <section class="section2">
+        <div>
+            <iframe src="https://www.instagram.com/r.eoki/" frameborder="1px" width="100%" height="100vh"></iframe>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="div1"> 
+            <h1>Anime Quotes</h1>
+            <h2>motivational anime content everyday</h2>
+        </div>
+    </section>
+    <section id="promo">
+        <div class="promocontent">
+            <img src="img/siteimg.jpeg" alt="instagram reel">
+            <div class="cont">
+                <h1>Promotions</h1>
+                <h2>Dm for paid promotions</h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot1">
+            <div class="qote">
+               <p><span class="qt">"</span> perennially gray, healing in rain <span class="qt">"</span> </p>
+            </div>
+            <div class="social">
+            </div>
+        </div>
+        <div class="copyright">
+            <p><b>Developer: </b><i><a href="">Amitanshu sahu</a></i><span> copyrights reserved 2022-23 </span></p>
+        </div>
+    </footer>
+</body>
+</html>
